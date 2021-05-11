@@ -94,5 +94,13 @@
       }
 
    ],
-   "primaryKey": "id_local_compteur"
+   "foreignKeys": [
+      {
+        "fields": "id_local_compteur",
+        "reference": {
+          "resource": "schema-comptage-velo-statique",
+          "fields": "id_local_compteur"
+        }
+      }
+    ]
 }
