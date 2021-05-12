@@ -3,7 +3,11 @@
    "name": "schema-comptage-velo-dynamique",
    "title": "Schéma du comptage vélo (partie dynamique)",
    "description": "Spécification du fichier d'échange relatif aux comptages vélo.",
-   "keywords": [],
+   "keywords": [
+      "comptage",
+      "vélo",
+      "mobilité"
+   ],
    "countryCode": "FR",
    "homepage": "https://github.com/etalab/schema-comptage-velo-dynamique",
    "licenses": [
@@ -61,15 +65,6 @@
          "description": "Date et heure de fin du comptage vélo au format ISO 8601",
          "example": "2019-09-07T13:30:00Z",
          "type": "datetime",
-         "constraints": {
-            "required": false
-         }
-      },
-      {
-         "name": "nombre_passage",
-         "description": "nombre de passages à vélo comptabilisés par le compteur vélo",
-         "example": "35",
-         "type": "integer",
          "constraints": {
             "required": false
          }
