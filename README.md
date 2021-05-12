@@ -3,6 +3,7 @@
 # Schéma de données pour le stationnement cyclable
 
 Schéma de comptage vélo dynamique
+
 Ce schéma permet d'estimer la fréquentation des aménagements cyclables grâce à des données dynamiques de comptage vélo. 
 Il doit être associé au schéma statique de comptage vélo (https://github.com/etalab/schema-comptage-velo-statique) et ne peut pas être réutilisé sans ce fichier. 
 L'identifiant unique du compteur dans les bases de données de la collectivité territoriale productrice de données permet de faire la jointure entre ces deux fichiers.
