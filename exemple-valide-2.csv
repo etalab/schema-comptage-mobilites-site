@@ -1,3 +1,2 @@
 id_local_compteur,date_heure_debut_comptage,date_heure_fin_comptage,nombre_passage_sens_circulation_1,nombre_passage_sens_circulation_2
-C01-Baix,2019-09-07T13:15:00Z,2019-09-07T13:30:00Z,20,15
-C01-Baix,2019-09-07T13:30:00Z,2019-09-07T13:45:00Z,20,15
+C01-Baix,2019-09-07T13:15:00Z,,20,
