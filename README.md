@@ -16,7 +16,7 @@ Cette distinction statique/dynamique a été faite car :
 - le fichier statique permet de donner des précisions sur le compteur vélo comme sa localisation, la méthode utilisée pour récupérer et transmettre les données, les types de pratiques qu'il peut enregistrer etc.
 - le fichier dynamique permet de comptabiliser le nombre de passage pendant un temps défini. 
 
-Ce schéma a été co-construit avec des collectivités, fournisseurs de compteur vélo, associations vélo et réutilisateurs. Deux ateliers ouverts (le 23/04/2021 et le //2021) ont permis sa production. Aujourd’hui disponible en version 0.1.0, il sera mis-à-jour régulièrement.
+Ce schéma a été co-construit avec des collectivités, fournisseurs de compteur vélo, associations vélo et réutilisateurs. Deux ateliers ouverts (le 23/04/2021 et le //2021) ont permis sa production. Aujourd’hui disponible en version 0.0.1, il sera mis-à-jour régulièrement.
 
 ## Cadre juridique
 
