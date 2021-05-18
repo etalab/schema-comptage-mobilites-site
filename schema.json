@@ -87,15 +87,14 @@
             "required": false
          }
       }
-
    ],
    "foreignKeys": [
       {
-        "fields": "id_local_compteur",
-        "reference": {
-          "resource": "schema-comptage-velo-statique",
-          "fields": "id_local_compteur"
-        }
+         "fields": "id_local_compteur",
+         "reference": {
+            "resource": "schema-comptage-velo-statique",
+            "fields": "id_local_compteur"
+         }
       }
-    ]
+   ]
 }
