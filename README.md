@@ -49,7 +49,7 @@ Les producteurs pourront :
 - publier directement sur data.gouv.fr ;
 - publier sur un portail local ou régional et s'assurer que les données publiées sont bien moissonnées et référencées sur data.gouv.fr.
 
-Nous préconisons aux producteurs de données de publier leurs fichiers avec la règle de nommage suivante : comptagevelo_nom.csv avec nom étant le nom de la collectivité productrice des données, par exemple comptagevelo_Baix.csv
+Nous préconisons aux producteurs de données de publier leurs fichiers avec la règle de nommage suivante : `comptagevelo_nom.csv` avec nom étant le nom de la collectivité productrice des données, par exemple `comptagevelo_Baix.csv`
 
 
 ## Conditions d’utilisation
