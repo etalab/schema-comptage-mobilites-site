@@ -62,7 +62,7 @@
       },
       {
          "name": "date_heure_fin_comptage",
-         "description": "Date et heure de fin du comptage vélo au format ISO 8601",
+         "description": "Date et heure de fin du comptage vélo au format ISO 8601. La colonne doit être présente mais la valeur peut être à vide, auquel cas le pas de temps spécifié dans le schéma compteurs sera obligatoire et prise en compte.",
          "example": "2019-09-07T13:30:00Z",
          "type": "datetime",
          "constraints": {
