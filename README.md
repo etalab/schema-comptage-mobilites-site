@@ -38,7 +38,7 @@ Ce dataset comprend notamment :
 
 ## Format de fichier
 
-Les jeux de données seront publiées au format CSV UTF8 avec séparateur ";". Certains champs sont obligatoires et d'autres optionnels. Les champs obligatoires doivent être complétés. Les champs optionnels peuvent être vides si la donnée n’est pas disponible. La colonne doit toutefois être présente.
+Les jeux de données seront publiées au format CSV UTF8 avec séparateur virgule ",". Certains champs sont obligatoires et d'autres optionnels. Les champs obligatoires doivent être complétés. Les champs optionnels peuvent être vides si la donnée n’est pas disponible. La colonne doit toutefois être présente.
 
 
 ## Publication
