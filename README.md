@@ -1,6 +1,6 @@
 :warning: Travail en cours de mise au point d'un schéma pour le schéma de comptage vélo.
 
-# Schéma de données pour le stationnement cyclable
+# Schéma de données pour le comptage vélo, partie dynamique
 
 Schéma de comptage vélo dynamique
 
