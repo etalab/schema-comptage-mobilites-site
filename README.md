@@ -1,27 +1,26 @@
-:warning: Travail en cours de mise au point d'un schéma pour le schéma de comptage de vélos.
+:warning: Travail en cours de mise au point pour le schéma de comptage de vélos.
 
-# Schéma de données pour le comptage vélo, partie dynamique
+# Schéma de données pour le comptage de vélos (partie dynamique)
 
-Schéma de comptage de vélos, partie dynamique
 Spécifications du fichier d'échange relatif aux comptages de vélos. 
 
 Ce schéma permet d'estimer la fréquentation des aménagements cyclables grâce à des données dynamiques de comptage vélo. 
-Il doit être associé au schéma statique de comptage vélo (https://github.com/etalab/schema-comptage-velo-statique) et ne peut pas être réutilisé sans ce fichier. 
+Il doit être associé au schéma "statique" de comptage de vélos (https://github.com/etalab/schema-comptage-velo-statique) et ne peut pas être réutilisé sans ce fichier. 
 L'identifiant unique du compteur dans les bases de données de la collectivité territoriale productrice de données permet de faire la jointure entre ces deux fichiers.
 
 ## Contexte
 
-Dans le cadre des travaux de l’équipe du Point d’accès national et de la mise en oeuvre de l’ouverture des données pour améliorer l’information dont disposent les voyageurs, l’équipe de transport.data.gouv.fr propose une solution simple et structurée pour l’harmonisation et l'ouverture des données de comptage vélo : le schéma de comptage vélo statique et dynamique.
+Dans le cadre des travaux de l’équipe du Point d’accès national et de la mise en oeuvre de l’ouverture des données pour améliorer l’information dont disposent les voyageurs, l’équipe de transport.data.gouv.fr propose une solution simple et structurée pour l’harmonisation et l'ouverture des données de comptage de vélos : le schéma de comptage de vélos "statique" et "dynamique".
 
 Cette distinction statique/dynamique a été faite car :
-- le fichier statique permet de donner des précisions sur le compteur vélo comme sa localisation, la méthode utilisée pour récupérer et transmettre les données, les types de pratiques qu'il peut enregistrer etc.
-- le fichier dynamique permet de comptabiliser le nombre de passage pendant un temps défini. 
+- le fichier statique permet de donner des précisions sur le compteur vélo comme sa localisation, la méthode utilisée pour récupérer et transmettre les données, les types de pratiques comptabilisées etc.
+- le fichier dynamique permet d'enregistrer le nombre de passages pendant un temps défini. 
 
-Ce schéma a été co-construit avec des collectivités, fournisseurs de compteur vélo, associations vélo et réutilisateurs. Deux ateliers ouverts (le 23/04/2021 et le //2021) ont permis sa production. Aujourd’hui disponible en version 0.0.1, il sera mis-à-jour régulièrement.
+Ce schéma a été co-construit avec Vélo & Territoires, des collectivités, fournisseurs de compteur de vélos, associations d'usagers de vélos, associations de collectivités et réutilisateurs. Deux ateliers ouverts (le 23/04/2021 et le //2021) ont permis sa production. Il sera mis-à-jour régulièrement.
 
 ## Cadre juridique
 
-L’ouverture des données sur le comptage vélo ne répond à aucune obligation réglementaire et n'est donc pas encadrée par le Réglement Européen (UE 2017 1926) ni par la Loi d'Orientation des Mobilités.
+L’ouverture des données sur le comptage vélo ne répond à aucune obligation réglementaire et n'est donc pas encadrée par le Règlement Européen (UE 2017 1926) ni par la Loi d'Orientation des Mobilités.
 
 Les collectivités harmonisent et publient donc ces données librement. 
 
@@ -30,11 +29,11 @@ Les collectivités harmonisent et publient donc ces données librement.
 Afin de faciliter la réutilisation et réduire le coût d’intégration de ces données dans des services tiers, un schéma a été défini afin d’assurer une harmonisation de ces données sur l’ensemble du territoire. Ce schéma définit des informations indispensables et complémentaires à fournir par le producteur. Cette distinction a été mise en place pour ne pas pénaliser les petits producteurs de données, et définit un standard minimal de complétude des données. Il est toutefois demandé aux producteurs de données de compléter le schéma avec le plus grand niveau de détail possible, afin de transmettre une information plus riche à l’usager final. 
 
 La base présente plusieurs cas d’usage :
-Elle recense les compteurs vélos et la fréquentation des aménagements cyclables d’une collectivité en permettant à des services de calcul d’itinéraire d’intégrer ces données pour informer sur le trafic. 
+Elle recense les compteurs de vélos et la fréquentation, par les vélos, du réseau routier et des aménagements cyclables d’une collectivité en permettant à des services de calcul d’itinéraire d’intégrer ces données pour informer sur le trafic. 
 Ce dataset comprend notamment : 
-- l'idenfiant unique pérenne du compteur ;
+- l'identifiant unique pérenne du compteur ;
 - un cadrage temporel avec la date de début et de fin de comptage;
-- le nombre de passages à vélo comptabilisés par le compteur vélo selon le sens de circulation.
+- le nombre de passages fe vélos comptabilisés par le compteur de vélos selon le sens de circulation.
 
 
 ## Format de fichier
@@ -44,7 +43,7 @@ Les jeux de données seront publiées au format CSV UTF8 avec séparateur virgul
 
 ## Publication
 
-Dans le but de maintenir à jour un répertoire des compteurs vélo en France, les collectivités sont invitées à transmettre systématiquement les données relatives aux compteurs sur leur territoire. 
+Dans le but de maintenir à jour un répertoire des compteurs de vélos en France, les collectivités sont invitées à transmettre systématiquement les données relatives aux compteurs sur leur territoire. 
 Elles peuvent ajouter le mot-clef "comptage-velo" lors de la publication du jeu de données dans leur espace de publication (portail local ou régional) ou directement sur data.gouv.fr.
 Les producteurs pourront :
 - publier directement sur data.gouv.fr ;
