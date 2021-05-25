@@ -1,8 +1,9 @@
-:warning: Travail en cours de mise au point d'un schéma pour le schéma de comptage vélo.
+:warning: Travail en cours de mise au point d'un schéma pour le schéma de comptage de vélos.
 
 # Schéma de données pour le comptage vélo, partie dynamique
 
-Schéma de comptage vélo dynamique
+Schéma de comptage de vélos, partie dynamique
+Spécifications du fichier d'échange relatif aux comptages de vélos. 
 
 Ce schéma permet d'estimer la fréquentation des aménagements cyclables grâce à des données dynamiques de comptage vélo. 
 Il doit être associé au schéma statique de comptage vélo (https://github.com/etalab/schema-comptage-velo-statique) et ne peut pas être réutilisé sans ce fichier. 
