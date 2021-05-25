@@ -1,8 +1,8 @@
 {
    "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
    "name": "schema-comptage-velo-dynamique",
-   "title": "Schéma du comptage vélo (partie dynamique)",
-   "description": "Spécification du fichier d'échange relatif aux comptages vélo.",
+   "title": "Schéma du comptage de vélos (partie dynamique)",
+   "description": "Spécification du fichier d'échange relatif aux comptages de vélos.",
    "keywords": [
       "comptage",
       "vélo",
@@ -39,7 +39,20 @@
          "email": "thibaut.barrere@beta.gouv.fr",
          "organisation": "transport.data.gouv.fr",
          "role": "contributor"
+      },
+      {
+         "title": "Stéphanie Mangin",
+         "email": "stephanie.mangin@velo-territoires.org",
+         "organisation": "Vélo & Territoires",
+         "role": "contributor"
+      },
+      {
+         "title": "Emmanuel Roche",
+         "email": "emmanuel.roche@grandchambery.fr",
+         "organisation": "Grand Chambéry",
+         "role": "contributor"
       }
+      
    ],
    "fields": [
       {
@@ -62,7 +75,7 @@
       },
       {
          "name": "date_heure_fin_comptage",
-         "description": "Date et heure de fin du comptage vélo au format ISO 8601",
+         "description": "Date et heure de fin du comptage vélo au format ISO 8601. Le créneau de comptage doit être présent même si aucun passage n'a été enregistré sur un pas de temps",
          "example": "2019-09-07T13:30:00Z",
          "type": "datetime",
          "constraints": {
@@ -75,7 +88,7 @@
          "example": "20",
          "type": "integer",
          "constraints": {
-            "required": false
+            "required": true
          }
       },
       {
