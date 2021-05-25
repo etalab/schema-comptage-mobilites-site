@@ -13,8 +13,8 @@ L'identifiant unique du compteur dans les bases de données de la collectivité 
 Dans le cadre des travaux de l’équipe du Point d’accès national et de la mise en oeuvre de l’ouverture des données pour améliorer l’information dont disposent les voyageurs, l’équipe de transport.data.gouv.fr propose une solution simple et structurée pour l’harmonisation et l'ouverture des données de comptage de vélos : le schéma de comptage de vélos "statique" et "dynamique".
 
 Cette distinction statique/dynamique a été faite car :
-- le fichier statique permet de donner des précisions sur le compteur vélo comme sa localisation, la méthode utilisée pour récupérer et transmettre les données, les types de pratiques comptabilisées etc.
-- le fichier dynamique permet d'enregistrer le nombre de passages pendant un temps défini. 
+- le fichier "statique" permet de donner des précisions sur le compteur vélo comme sa localisation, la méthode utilisée pour récupérer et transmettre les données, les types de pratiques comptabilisées etc.
+- le fichier "dynamique" permet d'enregistrer le nombre de passages pendant un temps défini. 
 
 Ce schéma a été co-construit avec Vélo & Territoires, des collectivités, fournisseurs de compteur de vélos, associations d'usagers de vélos, associations de collectivités et réutilisateurs. Deux ateliers ouverts (le 23/04/2021 et le //2021) ont permis sa production. Il sera mis-à-jour régulièrement.
 
