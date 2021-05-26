@@ -56,7 +56,7 @@
    "fields": [
       {
          "name": "id_local_compteur",
-         "description": "Identifiant unique du compteur dans les bases de données de la collectivité territoriale productrice de données; Cet identifiant doit être le même que dans le fichier du compteur",
+         "description": "Identifiant unique du compteur dans les bases de données de la collectivité territoriale productrice de données. Cet identifiant doit être le même que dans le fichier du compteur",
          "example": "C01-Baix",
          "type": "string",
          "constraints": {
