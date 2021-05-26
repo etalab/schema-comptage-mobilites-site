@@ -65,7 +65,7 @@
       },
       {
          "name": "date_heure_debut_comptage",
-         "description": "Date et heure du début du comptage vélo au format ISO 8601",
+         "description": "Date et heure du début du comptage vélo au format ISO 8601. Le créneau de comptage doit être présent même si aucun passage n'a été enregistré sur un pas de temps",
          "example": "2019-09-07T13:15:00Z",
          "type": "datetime",
          "constraints": {
@@ -83,7 +83,7 @@
       },
       {
          "name": "nombre_passage_sens_circulation_1",
-         "description": "nombre de passages à vélo comptabilisés par le compteur vélo dans le premier sens de circulation",
+         "description": "nombre de passages à vélos comptabilisés par le compteur de vélos dans le premier sens de circulation dans le cas d’un compteur avec distinction des sens ou le nombre de passage de vélos totaux s’il y a pas de distinction des sens. Lorsqu'il n'y a pas eu de passage, renseigner la valeur 0. Si il n'y a aucun comptage, laisser le champ vide.",
          "example": "20",
          "type": "integer",
          "constraints": {
@@ -92,7 +92,7 @@
       },
       {
          "name": "nombre_passage_sens_circulation_2",
-         "description": "nombre de passages à vélo comptabilisés par le compteur vélo dans le deuxième sens de circulation",
+         "description": "nombre de passages à vélos comptabilisés par le compteur de vélos dans le deuxième sens de circulation lorsque la distinction de sens est disponible",
          "example": "15",
          "type": "integer",
          "constraints": {
