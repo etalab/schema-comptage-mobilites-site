@@ -1,8 +1,8 @@
 {
    "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
    "name": "schema-comptage-velo-dynamique",
-   "title": "Schéma du comptage vélo (partie dynamique)",
-   "description": "Spécification du fichier d'échange relatif aux comptages vélo.",
+   "title": "Schéma du comptage de vélos (partie dynamique)",
+   "description": "Spécification du fichier d'échange relatif aux comptages de vélos.",
    "keywords": [
       "comptage",
       "vélo",
@@ -39,12 +39,24 @@
          "email": "thibaut.barrere@beta.gouv.fr",
          "organisation": "transport.data.gouv.fr",
          "role": "contributor"
+      },
+      {
+         "title": "Stéphanie Mangin",
+         "email": "stephanie.mangin@velo-territoires.org",
+         "organisation": "Vélo & Territoires",
+         "role": "contributor"
+      },
+      {
+         "title": "Emmanuel Roche",
+         "email": "emmanuel.roche@grandchambery.fr",
+         "organisation": "Grand Chambéry",
+         "role": "contributor"
       }
    ],
    "fields": [
       {
          "name": "id_local_compteur",
-         "description": "Identifiant unique du compteur dans les bases de données de la collectivité territoriale productrice de données; Cet identifiant doit être le même que dans le fichier du compteur",
+         "description": "Identifiant unique du compteur dans les bases de données de la collectivité territoriale productrice de données. Cet identifiant doit être le même que dans le fichier du compteur",
          "example": "C01-Baix",
          "type": "string",
          "constraints": {
@@ -53,7 +65,7 @@
       },
       {
          "name": "date_heure_debut_comptage",
-         "description": "Date et heure du début du comptage vélo au format ISO 8601",
+         "description": "Date et heure du début du comptage vélo au format ISO 8601. Le créneau de comptage doit être présent même si aucun passage n'a été enregistré sur un pas de temps",
          "example": "2019-09-07T13:15:00Z",
          "type": "datetime",
          "constraints": {
@@ -62,7 +74,7 @@
       },
       {
          "name": "date_heure_fin_comptage",
-         "description": "Date et heure de fin du comptage vélo au format ISO 8601. La colonne doit être présente mais la valeur peut être à vide, auquel cas le pas de temps spécifié dans le schéma compteurs sera obligatoire et pris en compte.",
+         "description": "Date et heure de fin du comptage vélo au format ISO 8601. Le créneau de comptage doit être présent même si aucun passage n'a été enregistré sur un pas de temps",
          "example": "2019-09-07T13:30:00Z",
          "type": "datetime",
          "constraints": {
@@ -71,16 +83,16 @@
       },
       {
          "name": "nombre_passage_sens_circulation_1",
-         "description": "nombre de passages à vélo comptabilisés par le compteur vélo dans le premier sens de circulation",
+         "description": "nombre de passages à vélos comptabilisés par le compteur de vélos dans le premier sens de circulation dans le cas d’un compteur avec distinction des sens ou le nombre de passage de vélos totaux s’il y a pas de distinction des sens. Lorsqu'il n'y a pas eu de passage, renseigner la valeur 0. Si il n'y a aucun comptage, laisser le champ vide.",
          "example": "20",
          "type": "integer",
          "constraints": {
-            "required": false
+            "required": true
          }
       },
       {
          "name": "nombre_passage_sens_circulation_2",
-         "description": "nombre de passages à vélo comptabilisés par le compteur vélo dans le deuxième sens de circulation",
+         "description": "nombre de passages à vélos comptabilisés par le compteur de vélos dans le deuxième sens de circulation lorsque la distinction de sens est disponible",
          "example": "15",
          "type": "integer",
          "constraints": {
