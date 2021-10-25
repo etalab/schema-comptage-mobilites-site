@@ -30,7 +30,7 @@ jobs:
     - name: Vérification du fichier d'exemple CSV
       run: frictionless validate --schema schema.json exemple-valide.csv
     - name: Vérification du fichier d'exemple CSV 2
-      run: frictionless validate --schema exemple-valide-eco-compteur.csv
+      run: frictionless validate --schema schema.json exemple-valide-eco-compteur.csv
     # TODO @thbar - tweak this to make it work on GitHub action
     # - name: Vérification des fichiers invalides CSV
     #   run: |
