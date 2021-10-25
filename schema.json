@@ -159,5 +159,5 @@
          }
       }
    ],  
-   "PrimaryKey": "site_id"
+   "primaryKey": "site_id"
 }
