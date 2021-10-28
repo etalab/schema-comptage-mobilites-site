@@ -1,11 +1,10 @@
 {
    "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
-   "name": "schema-comptage-velo-dynamique",
-   "title": "Schéma du comptage de vélos (partie dynamique)",
-   "description": "Spécification du fichier d'échange relatif aux comptages de vélos.",
+   "name": "comptage-mobilites-site",
+   "title": "Comptage des mobilités (Site)",
+   "description": "Spécification du fichier d'échange relatif aux comptages des mobilités.",
    "keywords": [
       "comptage",
-      "vélo",
       "mobilité"
    ],
    "countryCode": "FR",
@@ -21,11 +20,11 @@
       {
          "title": "Fichier valide (CSV)",
          "name": "exemple-valide-csv",
-         "path": "https://github.com/etalab/schema-comptage-velo-dynamique/raw/master/exemple-valide.csv"
+         "path": "https://github.com/etalab/comptage-mobilites-site/blob/master/exemple-valide.csv"
       }
    ],
    "created": "2021-05-06",
-   "lastModified": "2021-05-06",
+   "lastModified": "2021-10-25",
    "version": "0.1.0",
    "contributors": [
       {
