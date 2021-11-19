@@ -1,0 +1,35 @@
+name: Vérification du respect des spécifications
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Récupération de la version de Python à utiliser
+      id: python_version_check
+      run: echo ::set-output name=PYTHON_VERSION::$(cat .python-version)
+    - name: Installation Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: "${{ steps.python_version_check.outputs.PYTHON_VERSION }}"
+    - name: Cache pip
+      uses: actions/cache@v1
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+          ${{ runner.os }}-
+    - name: Installation des dépendances
+      run: pip install -r requirements.txt
+    - name: Vérification du schéma
+      run: frictionless validate --type schema schema.json
+    - name: Vérification du fichier d'exemple CSV
+      run: frictionless validate --schema schema.json exemple-valide.csv
+    - name: Vérification du fichier d'exemple CSV 2
+      run: frictionless validate --schema schema.json exemple-valide-eco-compteur.csv
+    # Quick cheap tests: we validate and verify that at least one matching error is found. "grep" will return exit code 0
+    # if a match is found, otherwise non zero (which will cause the GitHub action to fail).
