@@ -8,7 +8,7 @@
       "mobilité"
    ],
    "countryCode": "FR",
-   "homepage": "https://github.com/etalab/schema-comptage-velo-dynamique",
+   "homepage": "https://github.com/etalab/comptage-mobilites-site",
    "licenses": [
       {
          "title": "Etalab Licence Ouverte 2.0",
@@ -21,10 +21,15 @@
          "title": "Fichier valide (CSV)",
          "name": "exemple-valide-csv",
          "path": "https://github.com/etalab/comptage-mobilites-site/blob/master/exemple-valide.csv"
+      },
+      {
+         "title": "Deuxième fichier valide (CSV)",
+         "name": "exemple-valide-eco-compteur.csv",
+         "path": "https://github.com/etalab/comptage-mobilites-site/blob/master/exemple-valide-eco-compteur.csv"
       }
    ],
    "created": "2021-05-06",
-   "lastModified": "2021-10-25",
+   "lastModified": "2021-11-25",
    "version": "0.1.0",
    "contributors": [
       {
