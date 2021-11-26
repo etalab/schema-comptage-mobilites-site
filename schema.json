@@ -1,6 +1,6 @@
 {
    "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
-   "name": "comptage-mobilites-site",
+   "name": "schema-comptage-mobilites-site",
    "title": "Comptage des mobilités (Site)",
    "description": "Spécification du fichier d'échange relatif aux comptages des mobilités.",
    "keywords": [
@@ -20,12 +20,12 @@
       {
          "title": "Fichier valide (CSV)",
          "name": "exemple-valide-csv",
-         "path": "https://github.com/etalab/comptage-mobilites-site/blob/master/exemple-valide.csv"
+         "path": "https://github.com/etalab/schema-comptage-mobilites-site/blob/master/exemple-valide.csv"
       },
       {
          "title": "Deuxième fichier valide (CSV)",
          "name": "exemple-valide-eco-compteur.csv",
-         "path": "https://github.com/etalab/comptage-mobilites-site/blob/master/exemple-valide-eco-compteur.csv"
+         "path": "https://github.com/etalab/schema-comptage-mobilites-site/blob/master/exemple-valide-eco-compteur.csv"
       }
    ],
    "created": "2021-05-06",
