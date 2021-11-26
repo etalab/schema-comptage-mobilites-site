@@ -116,7 +116,7 @@
       },
       {
          "name": "external_ids",
-         "description": "Identifiant(s) d'infrastructures de la collectivité dans une base de données publiée en opendata. Chaque identifiant est séparé par une virgule. Exemple : identifiants des aménagements cyclables dans la base nationale des aménagements cyclables.", 
+         "description": "Identifiant(s) d'infrastructures de la collectivité dans une base de données publiée en opendata. Chaque identifiant est séparé par une virgule. Exemple : identifiants des aménagements cyclables dans la base nationale des aménagements cyclables.",
          "example": "07022-CM-001",
          "type": "string",
          "constraints": {
@@ -125,7 +125,7 @@
       },
       {
          "name": "infrastructure_type",
-         "description": "Type d'infrastructure où se situe le site de comptage. Les valeurs sont énumérées en anglais et traduites en français.", 
+         "description": "Type d'infrastructure où se situe le site de comptage. Les valeurs sont énumérées en anglais et traduites en français.",
          "example": "GREENWAY",
          "type": "string",
          "constraints": {
@@ -141,16 +141,16 @@
                "SHARED BUSWAY",
                "RAMP",
                "GUTTER",
-               "MIXED PEDESTRIAN/BICYCLE DEVELOPMENT NOT INCLUDING THE GREENWAY", 
+               "MIXED PEDESTRIAN/BICYCLE DEVELOPMENT NOT INCLUDING THE GREENWAY",
                "ROAD WITH BANALIZED CENTRAL TRACK",
                "COATED SHOULDER OUTSIDE THE RBCT",
-               "OTHER SPECIFIC SITE", 
+               "OTHER SPECIFIC SITE",
                "OTHER SHARED USE ROUTE",
                "HIGHWAY",
                "EUROPEAN ROAD",
                "NATIONAL ROAD",
-               "DEPARTEMENTAL ROAD", 
-               "METROPOLITAN ROAD", 
+               "DEPARTEMENTAL ROAD",
+               "METROPOLITAN ROAD",
                "MUNICIPAL ROAD",
                "FOOTPATH",
                "DEAD END",
@@ -162,6 +162,6 @@
             ]
          }
       }
-   ],  
+   ],
    "primaryKey": "site_id"
 }
