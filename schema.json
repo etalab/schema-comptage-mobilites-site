@@ -83,7 +83,7 @@
          }
       },
       {
-         "name": "name",
+         "name": "site_name",
          "description": "Nom du site",
          "example": "Baix",
          "type": "string",
