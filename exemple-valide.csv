@@ -1,2 +1,2 @@
-site_id,parent_site_id,fr_insee_code,xlong,ylat,external_ids,infrastructure_type
-C01-Baix,C-Baix,72010,1.452323,46.59698,07022-AC-001,GREENWAY
+site_id,parent_site_id,name,fr_insee_code,xlong,ylat,external_ids,infrastructure_type
+C01-Baix,C-Baix,Baix,72010,1.452323,46.59698,07022-AC-001,GREENWAY
