@@ -1,6 +1,9 @@
 # Changelog
 
 Ce fichier répertorie les changements entre différentes versions d'un schéma.
+## Version 0.2.2
+
+- Mise à jour n° de version
 
 ## Version 0.2.0
 
